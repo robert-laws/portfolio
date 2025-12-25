@@ -4,60 +4,53 @@ This file provides guidance for Claude Code when working with this repository.
 
 ## Project Overview
 
-Personal portfolio website for Robert Laws.
-
-## Current Status
-
-This is a newly initialized repository. The .gitignore configuration suggests Jekyll/GitHub Pages as the intended platform.
+Personal portfolio website for Robert Laws built with vanilla HTML, CSS, and JavaScript.
 
 ## Technology Stack
 
-- **Platform**: Jekyll / GitHub Pages (expected based on .gitignore)
-- **Styling**: Likely SCSS/Sass (based on .sass-cache in .gitignore)
+- **HTML5** - Semantic markup
+- **CSS3** - Styling (no preprocessor)
+- **JavaScript** - Vanilla JS, no frameworks
 
 ## Project Structure
 
 ```
 portfolio/
-├── .gitignore          # Jekyll-oriented ignore rules
+├── index.html          # Main entry point
+├── css/                # Stylesheets
+├── js/                 # JavaScript files
+├── assets/             # Images and other assets
+├── .gitignore          # Git ignore rules
 ├── LICENSE             # MIT License
 └── README.md           # Project readme
 ```
 
-## Common Commands
+## Development
 
-Once Jekyll is set up:
+Open `index.html` directly in a browser, or use a local development server:
+
 ```bash
-# Install dependencies
-bundle install
+# Using Python
+python -m http.server 8000
 
-# Run local development server
-bundle exec jekyll serve
+# Using Node.js (npx)
+npx serve
 
-# Build for production
-bundle exec jekyll build
+# Using VS Code Live Server extension
+# Right-click index.html → "Open with Live Server"
 ```
 
-## Development Notes
+## Code Conventions
 
-- Build output goes to `_site/` directory (git-ignored)
-- Jekyll cache files are in `.jekyll-cache/` (git-ignored)
-- Sass cache is in `.sass-cache/` (git-ignored)
+- Use semantic HTML elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
+- CSS follows BEM naming convention (optional)
+- JavaScript uses ES6+ features
+- Keep accessibility in mind (ARIA labels, alt text, keyboard navigation)
 
-## File Conventions
+## Browser Support
 
-When Jekyll is configured, expect:
-- `_layouts/` - Page layout templates
-- `_includes/` - Reusable components
-- `_posts/` - Blog posts (if any)
-- `_sass/` - SCSS partials
-- `assets/` - Static assets (images, CSS, JS)
-- `_config.yml` - Jekyll configuration
-
-## Testing
-
-No testing framework configured yet.
+Target modern browsers (Chrome, Firefox, Safari, Edge - latest versions).
 
 ---
 
-*Update this file as the project evolves with specific patterns, conventions, and commands.*
+*Update this file as the project evolves with specific patterns and conventions.*
