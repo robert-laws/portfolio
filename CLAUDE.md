@@ -4,7 +4,7 @@ This file provides guidance for Claude Code when working with this repository.
 
 ## Project Overview
 
-Personal portfolio website for Robert Laws built with vanilla HTML, CSS, and JavaScript. Features a modern, clean design with a coral accent color.
+Personal portfolio website for Robert Laws built with vanilla HTML, CSS, and JavaScript. Features a modern, clean design with a teal accent color.
 
 ## Technology Stack
 
@@ -57,8 +57,8 @@ npx serve
 - `--color-bg-alt`: #F8F9FA (light gray)
 - `--color-text`: #1A1A1A (near black)
 - `--color-text-muted`: #6C757D (gray)
-- `--color-accent`: #FF6B5B (coral)
-- `--color-accent-dark`: #E85A4A (dark coral)
+- `--color-accent`: #20B2AA (teal)
+- `--color-accent-dark`: #1A9690 (dark teal)
 
 ### Key CSS Classes
 - `.container` - Max-width centered container
